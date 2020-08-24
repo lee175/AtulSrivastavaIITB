@@ -49,7 +49,7 @@
             <div class="text-logo">
               <a href="index-2.html">
                 <div class="logo-symbol">A</div>
-                <div class="logo-text">Alex <span>Smith</span></div>
+                <div class="logo-text">Atul<span>Srivastava</span></div>
               </a>
             </div>
             <!-- /Text Logo -->
@@ -57,50 +57,16 @@
             <!-- Navigation -->
             <div class="site-nav mobile-menu-hide">
               <ul class="leven-classic-menu site-main-menu">
-                <li class="menu-item menu-item-has-children">
-                  <a href="index-2.html">About Me</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item">
-                      <a href="index-2.html">About Me 1</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="index-3.html">About Me 2</a>
-                    </li>
-                  </ul>
+                <li class="menu-item">
+                  <a href="index.html">About Me</a>
                 </li>
 
                 <li class="menu-item">
                   <a href="resume.html">Resume</a>
                 </li>
 
-                <li class="menu-item menu-item-has-children current-menu-item">
+                <li class="menu-item current-menu-item">
                   <a href="portfolio.html">Portfolio</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item">
-                      <a href="portfolio-2-columns.html">Portfolio 2 Columns</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="portfolio.html">Portfolio 3 Columns</a>
-                    </li>
-                    <li class="menu-item current-menu-item">
-                      <a href="portfolio-4-columns.html">Portfolio 4 Columns</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="portfolio-5-columns.html">Portfolio 5 Columns</a>
-                    </li>
-                  </ul>
-                </li>
-                
-                <li class="menu-item menu-item-has-children">
-                  <a href="blog.html">Blog</a>
-                  <ul class="sub-menu">
-                    <li class="menu-item">
-                      <a href="blog.html">Blog 2 Columns</a>
-                    </li>
-                    <li class="menu-item">
-                      <a href="blog-3-columns.html">Blog 3 Columns</a>
-                    </li>
-                  </ul>
                 </li>
 
                 <li class="menu-item">
@@ -122,9 +88,6 @@
 
               <div class="page-title">
                 <h1>Portfolio</h1>
-                <div class="page-subtitle">
-                    <h4> My Works</h4>
-                </div>
               </div>
 
               <div id="content" class="page-content site-content single-post" role="main">
@@ -136,35 +99,23 @@
 
                       <ul class="portfolio-filters">
                         <li class="active">
-                          <a class="filter btn btn-sm btn-link" data-group="category_all">All</a>
+                          <a class="filter btn btn-sm btn-link" data-group="category_all">Articles</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_detailed">Detailed</a>
+                          <a class="filter btn btn-sm btn-link" data-group="category_detailed">Awards</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_direct-url">Direct URL</a>
+                          <a class="filter btn btn-sm btn-link" data-group="category_direct-url">Conferences</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_image">Image</a>
+                          <a class="filter btn btn-sm btn-link" data-group="category_image">Projects</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
-                        </li>
-
-                        <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_video">Video</a>
-                        </li>
-                        
-                        <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_vimeo-video">Vimeo Video</a>
-                        </li>
-                        
-                        <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_youtube-video">YouTube Video</a>
+                          <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">Publications</a>
                         </li>
                       </ul>
       
@@ -248,46 +199,6 @@
                           <h4 class="name">YouTube Video 1</h4>
                           <span class="category">Video, YouTube Video</span>
                         </figure>
-                        <!-- /Portfolio Item 6 -->
-
-                        <!-- Portfolio Item 7 -->
-                        <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/7.jpg" alt="Full Project 1" title="" />
-                            <a href="portfolio-project-1.html" class="ajax-page-load"></a>
-                          </div>
-
-                          <i class="far fa-file-alt"></i>
-                          <h4 class="name">Full Project 1</h4>
-                          <span class="category">Detailed</span>
-                        </figure>
-                        <!-- /Portfolio Item 7 -->
-
-                        <!-- Portfolio Item 8 -->
-                        <figure class="item direct" data-groups='["category_all", "category_direct-url"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/8.jpg" alt="Direct URL" title="" />
-                            <a target="_blank" href="https://themeforest.net/user/lmpixels/portfolio"></a>
-                          </div>
-
-                          <i class="fa fa-link"></i>
-                          <h4 class="name">Direct URL</h4>
-                          <span class="category">Direct URL</span>
-                        </figure>
-                        <!-- /Portfolio Item 8 -->
-
-                        <!-- Portfolio Item 9 -->
-                        <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/9.jpg" alt="Image 1" title="" />
-                            <a class="lightbox" title="Image 1" href="img/portfolio/full/5.jpg"></a>
-                          </div>
-
-                          <i class="fa fa-image"></i>
-                          <h4 class="name">Image 1</h4>
-                          <span class="category">Image</span>
-                        </figure>
-                        <!-- /Portfolio Item 9 -->
                       </div>
                       <!-- /Portfolio Content -->
                     </div>
@@ -302,22 +213,11 @@
           <div class="footer-social">
             <ul class="footer-social-links">
               <li>
-                <a href="#" target="_blank">Twitter</a>
-              </li>
-
-              <li>
-                <a href="#" target="_blank">Facebook</a>
-              </li>
-
-              <li>
-                <a href="#" target="_blank">Instagram</a>
+                <a href="">Department Of Civil Engineering, IIT Bombay</a>
               </li>
             </ul>
           </div>
               
-          <div class="footer-copyrights">
-            <p>© 2020 All rights reserved. LMPixels.</p>
-          </div>
         </footer>
         
       </div>
@@ -325,7 +225,6 @@
 
     <script src="js/jquery-2.1.3.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src='../../../../www.google.com/recaptcha/api.js'></script>
     <script src="js/bootstrap.min.js"></script>
     <script src='js/jquery.shuffle.min.js'></script>
     <script src='js/masonry.pkgd.min.js'></script>
@@ -335,6 +234,9 @@
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Custom JS scripts -->
+    <script src="portfolio.js"></script>
   </body>
 
 <!-- Mirrored from lmpixels.com/demo/leven-html-new/full-width-light/portfolio-4-columns.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Aug 2020 22:17:39 GMT -->
