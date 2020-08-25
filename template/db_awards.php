@@ -3,7 +3,7 @@
 require_once 'db_config.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-  $stmt = "SELECT title, authors, date FROM articles ORDER BY date DESC;";
+  $stmt = "SELECT title, description, date FROM awards ORDER BY date DESC;";
   $result = $db->query($stmt);
   if ($result->num_rows > 0) {
     $rows = $result->fetch_all(MYSQLI_ASSOC);

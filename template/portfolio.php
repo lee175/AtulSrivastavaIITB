@@ -86,9 +86,9 @@
           <div id="main-content" class="single-page-content">
             <div id="primary" class="content-area">
 
-              <div class="page-title">
+              <!-- <div class="page-title">
                 <h1>Portfolio</h1>
-              </div>
+              </div> -->
 
               <div id="content" class="page-content site-content single-post" role="main">
 
@@ -99,110 +99,30 @@
 
                       <ul class="portfolio-filters">
                         <li class="active">
-                          <a class="filter btn btn-sm btn-link" data-group="category_all">Articles</a>
+                          <a class="filter btn btn-sm btn-link" id="button_articles">Articles</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_detailed">Awards</a>
+                          <a class="filter btn btn-sm btn-link" id="button_awards">Awards</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_direct-url">Conferences</a>
+                          <a class="filter btn btn-sm btn-link" id="button_conferences">Conferences</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_image">Projects</a>
+                          <a class="filter btn btn-sm btn-link" id="button_projects">Projects</a>
                         </li>
                         
                         <li>
-                          <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">Publications</a>
+                          <a class="filter btn btn-sm btn-link" id="button_publications">Publications</a>
                         </li>
                       </ul>
-      
-      
-                      <!-- Portfolio Grid -->
-                      <div class="portfolio-grid four-columns shuffle">
 
-                        <!-- Portfolio Item 1 -->
-                        <figure class="item standard" data-groups='["category_all", "category_detailed"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/1.jpg" alt="Full Project 2" title="" />
-                            <a href="portfolio-project-2.html" class="ajax-page-load"></a>
-                          </div>
-
-                          <i class="far fa-file-alt"></i>
-                          <h4 class="name">Full Project 2</h4>
-                          <span class="category">Detailed</span>
-                        </figure>
-                        <!-- /Portfolio Item 1 -->
-
-                        <!-- Portfolio Item 2 -->
-                        <figure class="item lbvideo" data-groups='["category_all", "category_video", "category_youtube-video"]'>
-                            <div class="portfolio-item-img">
-                              <img src="img/portfolio/2.jpg" alt="YouTube Video 2" title="" />
-                              <a href="https://www.youtube.com/embed/F-1weFCiYBA" class="lightbox mfp-iframe" title="YouTube Video 2"></a>
-                            </div>
-
-                            <i class="fab fa-youtube"></i>
-                            <h4 class="name">YouTube Video 2</h4>
-                            <span class="category">Video, YouTube Video</span>
-                        </figure>
-                        <!-- /Portfolio Item 2 -->
-
-                        <!-- Portfolio Item 3 -->
-                        <figure class="item lbimage" data-groups='["category_all", "category_image"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/3.jpg" alt="Image 2" title="" />
-                            <a class="lightbox" title="Image 2" href="img/portfolio/full/3.jpg"></a>
-                          </div>
-
-                          <i class="fa fa-image"></i>
-                          <h4 class="name">Image 2</h4>
-                          <span class="category">Image</span>
-                        </figure>
-                        <!-- /Portfolio Item 3 -->
-
-                        <!-- Portfolio Item 4 -->
-                        <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/4.jpg" alt="SoundCloud Audio 1" title="" />
-                            <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true" class="lightbox mfp-iframe" title="SoundCloud Audio 1"></a>
-                          </div>
-
-                          <i class="fas fa-volume-up"></i>
-                          <h4 class="name">SoundCloud Audio 1</h4>
-                          <span class="category">SoundCloud</span>
-                        </figure>
-                        <!-- /Portfolio Item 4 -->
-               
-                        <!-- Portfolio Item 5 -->
-                        <figure class="item lbvideo" data-groups='["category_all", "category_video", "category_vimeo-video"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/5.jpg" alt="Vimeo Video" title="" />
-                            <a href="https://player.vimeo.com/video/158284739" class="lightbox mfp-iframe" title="Vimeo Video"></a>
-                          </div>
-
-                          <i class="fab fa-vimeo-v"></i>
-                          <h4 class="name">Vimeo Video</h4>
-                          <span class="category">Video, Vimeo Video</span>
-                        </figure>
-                        <!-- /Portfolio Item 5 -->
-
-                        <!-- Portfolio Item 6 -->
-                        <figure class="item lbvideo" data-groups='["category_all", "category_video", "category_youtube-video"]'>
-                          <div class="portfolio-item-img">
-                            <img src="img/portfolio/6.jpg" alt="YouTube Video 1" title="" />
-                            <a href="https://www.youtube.com/embed/ZK8REu-8pGw" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
-                          </div>
-
-                          <i class="fab fa-youtube"></i>
-                          <h4 class="name">YouTube Video 1</h4>
-                          <span class="category">Video, YouTube Video</span>
-                        </figure>
-                      </div>
-                      <!-- /Portfolio Content -->
+                    <!-- Insert data based on category selected -->
+                    <div class="row" id="data">
                     </div>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -222,8 +142,24 @@
         
       </div>
     </div>
-
+    
     <script src="js/jquery-2.1.3.min.js"></script>
+
+    <!-- Custom JS scripts -->
+    <script src="portfolio_articles.js"></script>
+    <script src="portfolio_awards.js"></script>
+    <script src="portfolio_conferences.js"></script>
+    <script src="portfolio_experiences.js"></script>
+    <script src="portfolio_publications.js"></script>
+    <script src="portfolio.js"></script>
+    
+    <script type="text/javascript">
+      $(() => {
+        $('#button_articles').trigger('click');
+      });
+    </script>
+    <!-- Custom JS scripts -->
+
     <script src="js/imagesloaded.pkgd.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src='js/jquery.shuffle.min.js'></script>
@@ -234,9 +170,6 @@
     <script src="js/jquery.googlemap.js"></script>
     <script src="js/validator.js"></script>
     <script src="js/main.js"></script>
-
-    <!-- Custom JS scripts -->
-    <script src="portfolio.js"></script>
   </body>
 
 <!-- Mirrored from lmpixels.com/demo/leven-html-new/full-width-light/portfolio-4-columns.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 16 Aug 2020 22:17:39 GMT -->
