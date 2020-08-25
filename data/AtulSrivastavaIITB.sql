@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 24, 2020 at 03:29 PM
+-- Generation Time: Aug 25, 2020 at 10:10 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.4.2
 
@@ -32,8 +32,16 @@ CREATE TABLE `articles` (
   `id` int(11) NOT NULL,
   `title` varchar(500) NOT NULL,
   `authors` varchar(200) NOT NULL,
-  `date` varchar(20) NOT NULL
+  `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `articles`
+--
+
+INSERT INTO `articles` (`id`, `title`, `authors`, `date`) VALUES
+(1, 'article 1', 'shashank kumar, jigar makwana, anurag fogawat', '2000-01-01 00:00:00'),
+(2, 'article 2', 'chuslee', '2001-01-01 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -44,9 +52,16 @@ CREATE TABLE `articles` (
 CREATE TABLE `awards` (
   `id` int(11) NOT NULL,
   `title` varchar(200) NOT NULL,
-  `desciption` varchar(500) NOT NULL,
-  `date` varchar(20) NOT NULL
+  `description` varchar(500) NOT NULL,
+  `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `awards`
+--
+
+INSERT INTO `awards` (`id`, `title`, `description`, `date`) VALUES
+(1, 'award 1', 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document', '2000-01-01 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -58,7 +73,7 @@ CREATE TABLE `conferences` (
   `id` int(11) NOT NULL,
   `title` varchar(500) NOT NULL,
   `people` varchar(200) NOT NULL,
-  `date` varchar(20) NOT NULL
+  `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -71,8 +86,8 @@ CREATE TABLE `experiences` (
   `id` int(11) NOT NULL,
   `position` varchar(300) NOT NULL,
   `description` varchar(300) NOT NULL,
-  `date_start` varchar(20) NOT NULL,
-  `date_end` varchar(20) NOT NULL
+  `date_start` datetime NOT NULL,
+  `date_end` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -87,8 +102,8 @@ CREATE TABLE `projects` (
   `place` varchar(200) NOT NULL,
   `role` varchar(200) NOT NULL,
   `duration` varchar(20) NOT NULL,
-  `date_start` varchar(20) NOT NULL,
-  `date_end` varchar(20) NOT NULL
+  `date_start` datetime NOT NULL,
+  `date_end` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -117,15 +132,9 @@ CREATE TABLE `students` (
   `rollnumber` varchar(15) NOT NULL,
   `degree` varchar(10) NOT NULL,
   `title` varchar(200) NOT NULL,
-  `date` varchar(20) NOT NULL
+  `date` datetime NOT NULL,
+  `avatar` mediumblob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `students`
---
-
-INSERT INTO `students` (`id`, `name`, `rollnumber`, `degree`, `title`, `date`) VALUES
-(1, 'shashank kumar', '170050031', 'B.Tech.', 'Website', 'August 2020');
 
 --
 -- Indexes for dumped tables
@@ -181,13 +190,13 @@ ALTER TABLE `students`
 -- AUTO_INCREMENT for table `articles`
 --
 ALTER TABLE `articles`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `awards`
 --
 ALTER TABLE `awards`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `conferences`
